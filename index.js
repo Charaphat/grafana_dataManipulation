@@ -4,7 +4,7 @@ import cors from 'cors';
 import { InfluxDB, Point } from '@influxdata/influxdb-client'
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 5000;
 const url = "https://ap-southeast-2-1.aws.cloud2.influxdata.com/"
 const token = "2wk4KC5YfC9vd_dfQ5tVPx5B-4uRe80wPDc_VGZLXIVbRM6pNY89lru3BIHcRjbj88Aj9eIWV5Qq0CRGi3lH5g=="
 const org = "charaphat"
